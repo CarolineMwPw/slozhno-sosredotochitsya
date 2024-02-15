@@ -17,9 +17,13 @@
 .header {
   width: 100%;
   padding-inline: 10px;
-  margin-block: 10px 50px;
+  /* margin-block: 10px 50px; */
+  /* padding-block: 10px 50px; */
+  padding-block-start: 10px;
+  margin-block-end: 60px;
   box-sizing: border-box;
-  min-height: 648px;
+  /* min-height: 648px; */
+  height: 100vh;
 }
 
 .decorated-zone {
@@ -32,7 +36,7 @@
   width: 25px;
   height: 25px;
 
-  top: 0;
+  top: 10px;
   right: 10px;
 
   border-width: 1px 1px 0px 0px;
@@ -46,7 +50,7 @@
   width: 25px;
   height: 25px;
 
-  bottom: 0;
+  bottom: 10px;
   left: 10px;
 
   border-width: 0px 0px 1px 1px;
@@ -310,9 +314,11 @@
 .footer {
   /* min-height: 647px; */
   width: 100%;
-  padding-block: 276px;
+  /* padding-block: 276px; */
+  padding-block: 286px;
   box-sizing: border-box;
   text-align: center;
   padding-inline: 10px;
-  margin-block-end: 10px;
+  /* margin-block-end: 10px; */
+  height: 100vh;
 }
