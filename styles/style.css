@@ -1,5 +1,318 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-color: var(--page-color);
+  font-family: "IBM Plex Mono", Inter, sans-serif;
+  font-style: normal;
+
+  background-image: var(--background_image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--content-color);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.header {
+  width: 100%;
+  padding-inline: 10px;
+  margin-block: 10px 50px;
+  box-sizing: border-box;
+  min-height: 648px;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  top: 0;
+  right: 10px;
+
+  border-width: 1px 1px 0px 0px;
+  border-style: solid;
+  border-color: var(--titles-angle_color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  bottom: 0;
+  left: 10px;
+
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  border-color: var(--titles-angle_color);
+}
+
+.record_symbol {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  text-align: center;
+  padding-inline-end: 28px;
+  padding-block-end: 39px;
+  color: var(--text-shadow_color);
+  position: relative;
+}
+
+.record_symbol::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 9px;
+  top: 8px;
+  right: 9px;
+
+  background-color: var(--text-shadow_color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--text-shadow_color);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.header__theme-menu {
+  padding-block-end: 65px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  color: var(--titles-angle_color);
+  font-family: inherit;
+  padding: 1.5px 13px;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 18px;
+
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--titles-angle_color);
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--hover_color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid var(--titles-angle_color);
+}
+
+.header_text {
+  padding-block-end: 56px;
+}
+
+.header__title {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--hd-ft_title);
+
+  text-shadow: 4px 4px 0px var(--text-shadow_color);
+  padding-block-end: 55px;
+}
+
+.subtitles {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.header_subtitle {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+
+  align-self: flex-end;
+}
+
+.title-decor {
+  color: var(--hd-subtitle_color);
+  background-color: var(--text-shadow_color);
+}
+
+.content {
+  box-sizing: border-box;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  width: 100%;
+  margin-block-end: 50px;
+}
+
+.content-section {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  margin-block-end: 50px;
+}
+
+.wrap {
+  display: grid;
+  gap: 20px;
+}
+
+.content__card {
+}
+
+.content_cards_title {
+  color: var(--titles-angle_color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.card_title {
+  margin-block-end: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.card_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.text-shadow {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  text-decoration: none;
+  text-shadow: 2px 1px var(--text-shadow_color);
+}
+
+.text-shadow:focus {
+  outline: none;
+}
+
+.text-shadow:focus-visible {
+  outline: 1px solid var(--content-color);
+}
+
+.text-shadow:hover {
+  border-bottom: 1px solid var(--content-color);
+}
+
+.advice_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card_text.title-decor {
+  margin-block-end: 10px;
+}
+
+.card_list_title {
+  margin-block-end: 20px;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.picture-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.pictures_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  margin-block-end: 10px;
+}
+
+.in_captures {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "sun"
+    "icecream"
+    "tape"
+    "books"
+    "street";
+}
+
+.capture {
+  width: 100%;
+}
+
+.capture img {
+}
+
+.sunset {
+  grid-area: sun;
+}
+
+.ice-cream {
+  grid-area: icecream;
+}
+
+.tape {
+  grid-area: tape;
+}
+
+.books {
+  grid-area: books;
+}
+
+.street {
+  grid-area: street;
+}
+
+.footer_title {
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--hd-ft_title);
+  text-shadow: 2px 2px 0px var(--text-shadow_color);
+}
+
+.footer {
+  /* min-height: 647px; */
+  width: 100%;
+  padding-block: 276px;
+  box-sizing: border-box;
+  text-align: center;
+  padding-inline: 10px;
+  margin-block-end: 10px;
 }
