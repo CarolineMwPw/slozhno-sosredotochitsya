@@ -66,10 +66,12 @@
   font-size: 18px;
   line-height: 139%;
   text-align: center;
-  padding-inline-end: 28px;
-  padding-block-end: 39px;
+  padding-inline-end: 10px;
   color: var(--text-shadow_color);
-  position: relative;
+  /* position: relative; */
+  position: absolute;
+  text-transform: uppercase;
+  right: 28px;
 }
 
 .record_symbol::before {
@@ -79,7 +81,8 @@
   width: 9px;
   height: 9px;
   top: 8px;
-  right: 9px;
+  right: -9px;
+  /* right: 1px; */
 
   background-color: var(--text-shadow_color);
   border-radius: 50%;
@@ -94,7 +97,7 @@
 }
 
 .header__theme-menu {
-  padding-block-end: 65px;
+  padding-block: 65px;
 }
 
 .header__theme-menu-button {
@@ -127,10 +130,6 @@
   outline: 1px solid var(--titles-angle_color);
 }
 
-.header_text {
-  padding-block-end: 56px;
-}
-
 .header__title {
   font-family: "IBM Plex Mono";
   font-style: normal;
@@ -146,8 +145,10 @@
 .subtitles {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+
   width: 100%;
+  /* padding-block-end: 56px; */
+  margin-block-end: 56px;
 }
 
 .header_subtitle {
@@ -156,8 +157,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-
-  align-self: flex-end;
 }
 
 .title-decor {
@@ -170,7 +169,8 @@
   padding-inline-start: 10px;
   padding-inline-end: 10px;
   width: 100%;
-  margin-block-end: 50px;
+  /* margin-block-end: 50px; */
+  margin-block-end: 40px;
 }
 
 .content-section {
@@ -264,35 +264,35 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "sun"
-    "icecream"
-    "tape"
-    "books"
-    "street";
+    "first"
+    "sec"
+    "third"
+    "fourth"
+    "fifth";
 }
 
 .capture {
   width: 100%;
 }
 
-.sunset {
-  grid-area: sun;
+.capture:nth-child(1) {
+  grid-area: first;
 }
 
-.ice-cream {
-  grid-area: icecream;
+.capture:nth-child(2) {
+  grid-area: sec;
 }
 
-.tape {
-  grid-area: tape;
+.capture:nth-child(3) {
+  grid-area: third;
 }
 
-.books {
-  grid-area: books;
+.capture:nth-child(4) {
+  grid-area: fourth;
 }
 
-.street {
-  grid-area: street;
+.capture:nth-child(5) {
+  grid-area: fifth;
 }
 
 .footer_title {

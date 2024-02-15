@@ -41,15 +41,25 @@
   }
 
   .record_symbol {
-    padding-block-end: 146px;
+    padding-inline-end: 20px;
+  }
+
+  .record_symbol::before {
+    content: "";
+    top: 8px;
+    right: 1px;
   }
 
   .header__theme-menu {
+    padding-block-start: 172px;
     padding-block-end: 173px;
   }
 
-  .header_text {
-    padding-block-end: 183px;
+  .subtitles {
+    /* padding-block-end: 183px; */
+    margin-block-end: 183px;
+    margin-inline-start: 50%;
+    width: 50%;
   }
 
   .header__title {
@@ -59,7 +69,7 @@
   }
 
   .header_subtitle {
-    width: 50%;
+    /* width: 50%; */
   }
 
   .content {
@@ -98,10 +108,11 @@
     grid-auto-columns: repeat(auto-fit, 229px);
     grid-auto-rows: repeat(auto-fit, 192px);
     gap: 20px;
+
     grid-template-areas:
-      "sun sun icecream"
-      "tape books icecream"
-      "tape street street";
+      "first first sec"
+      "third fourth sec"
+      "third fifth fifth";
   }
 
   .capture {
@@ -127,8 +138,9 @@
   }
 
   .header__theme-menu {
-    margin-block-start: -25px;
+    /* margin-block-start: -25px; */
     padding-block-end: 273px;
+    padding-block-start: 0;
   }
 
   .record_symbol {
@@ -141,8 +153,9 @@
     padding-block-end: 114px;
   }
 
-  .header_text {
-    padding-block-end: 134px;
+  .subtitles {
+    /* padding-block-end: 134px; */
+    margin-block-end: 134px;
   }
 
   .content-section {

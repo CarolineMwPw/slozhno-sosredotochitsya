@@ -70,11 +70,11 @@
   display: none;
 }
 
-@media (width >= 375px) {
+/* @media (width >= 375px) {
   .page.theme_light .header__theme-menu {
     padding-block: 65px;
   }
-}
+} */
 
 @media (width >= 768px) {
   .page.theme_light .header__theme-menu {
