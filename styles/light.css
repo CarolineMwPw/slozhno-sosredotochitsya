@@ -80,9 +80,6 @@
   .page.theme_light .header__theme-menu {
     padding-block: 172px;
   }
-
-  .page.theme_light {
-  }
 }
 
 @media (width >= 1024px) {

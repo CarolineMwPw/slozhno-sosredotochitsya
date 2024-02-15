@@ -20,7 +20,7 @@
   /* margin-block: 10px 50px; */
   /* padding-block: 10px 50px; */
   padding-block-start: 10px;
-  margin-block-end: 60px;
+  margin-block-end: 40px;
   box-sizing: border-box;
   /* min-height: 648px; */
   height: 100vh;
@@ -107,8 +107,6 @@
 
   font-weight: 400;
   font-size: 18px;
-
-  text-align: center;
   text-transform: lowercase;
 }
 
@@ -185,9 +183,6 @@
 .wrap {
   display: grid;
   gap: 20px;
-}
-
-.content__card {
 }
 
 .content_cards_title {
@@ -278,9 +273,6 @@
 
 .capture {
   width: 100%;
-}
-
-.capture img {
 }
 
 .sunset {
