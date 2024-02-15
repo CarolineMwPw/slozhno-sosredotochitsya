@@ -70,7 +70,7 @@
   color: var(--text-shadow_color);
   /* position: relative; */
   position: absolute;
-  text-transform: uppercase;
+
   right: 28px;
 }
 
