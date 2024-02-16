@@ -1,8 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-color: var(--page-color);
-  font-family: "IBM Plex Mono", Inter, sans-serif;
+  background-color: var(--page_color);
+  font-family: "IBM Plex Mono", monospace, sans-serif;
   font-style: normal;
 
   background-image: var(--background_image);
@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: var(--content-color);
+  color: var(--content_color);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -21,7 +21,7 @@
   /* padding-block: 10px 50px; */
   padding-block-start: 10px;
   margin-block-end: 40px;
-  box-sizing: border-box;
+
   /* min-height: 648px; */
   height: 100vh;
 }
@@ -41,7 +41,7 @@
 
   border-width: 1px 1px 0px 0px;
   border-style: solid;
-  border-color: var(--titles-angle_color);
+  border-color: var(--titles_angle_color);
 }
 
 .decorated-zone::after {
@@ -55,7 +55,7 @@
 
   border-width: 0px 0px 1px 1px;
   border-style: solid;
-  border-color: var(--titles-angle_color);
+  border-color: var(--titles_angle_color);
 }
 
 .record_symbol {
@@ -67,7 +67,7 @@
   line-height: 139%;
   text-align: center;
   padding-inline-end: 10px;
-  color: var(--text-shadow_color);
+  color: var(--text_shadow_color);
   /* position: relative; */
   position: absolute;
 
@@ -84,9 +84,9 @@
   right: -9px;
   /* right: 1px; */
 
-  background-color: var(--text-shadow_color);
+  background-color: var(--text_shadow_color);
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px var(--text-shadow_color);
+  box-shadow: 0px 0px 4px 2px var(--text_shadow_color);
 }
 
 .header__theme-menu-list {
@@ -103,7 +103,7 @@
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
-  color: var(--titles-angle_color);
+  color: var(--titles_angle_color);
   font-family: inherit;
   padding: 1.5px 13px;
   text-align: center;
@@ -113,12 +113,16 @@
   text-transform: lowercase;
 }
 
+.header__theme-menu-button {
+  cursor: pointer;
+}
+
 .header__theme-menu-button:focus {
   outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--titles-angle_color);
+  border-bottom: 1px solid var(--titles_angle_color);
 }
 
 .header__theme-menu-button:hover {
@@ -127,7 +131,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  outline: 1px solid var(--titles-angle_color);
+  outline: 1px solid var(--titles_angle_color);
 }
 
 .header__title {
@@ -136,9 +140,9 @@
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  color: var(--hd-ft_title);
+  color: var(--hd_ft_title);
 
-  text-shadow: 4px 4px 0px var(--text-shadow_color);
+  text-shadow: 4px 4px 0px var(--text_shadow_color);
   padding-block-end: 55px;
 }
 
@@ -160,8 +164,8 @@
 }
 
 .title-decor {
-  color: var(--hd-subtitle_color);
-  background-color: var(--text-shadow_color);
+  color: var(--hd_subtitle_color);
+  background-color: var(--text_shadow_color);
 }
 
 .content {
@@ -186,7 +190,7 @@
 }
 
 .content_cards_title {
-  color: var(--titles-angle_color);
+  color: var(--titles_angle_color);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
@@ -214,7 +218,7 @@
   text-align: left;
 
   text-decoration: none;
-  text-shadow: 2px 1px var(--text-shadow_color);
+  text-shadow: 2px 1px var(--text_shadow_color);
 }
 
 .text-shadow:focus {
@@ -222,11 +226,11 @@
 }
 
 .text-shadow:focus-visible {
-  outline: 1px solid var(--content-color);
+  outline: 1px solid var(--content_color);
 }
 
 .text-shadow:hover {
-  border-bottom: 1px solid var(--content-color);
+  border-bottom: 1px solid var(--content_color);
 }
 
 .advice_list {
@@ -299,8 +303,8 @@
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  color: var(--hd-ft_title);
-  text-shadow: 2px 2px 0px var(--text-shadow_color);
+  color: var(--hd_ft_title);
+  text-shadow: 2px 2px 0px var(--text_shadow_color);
 }
 
 .footer {
