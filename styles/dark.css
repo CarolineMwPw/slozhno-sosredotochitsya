@@ -19,17 +19,7 @@
 
   --content_color: #f1b2ce;
   --hover_color: #ff007066;
-  --main-gap: 10px;
 }
-
 .page.theme_dark .record_symbol {
   display: inherit;
-  /* padding-inline-end: 20px; */
-}
-
-@media (width >= 768px) {
-  .page.theme_dark .record_symbol {
-    display: inherit;
-    padding-inline-end: 20px;
-  }
 }
